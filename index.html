@@ -4,84 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Second-Project</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title> Second-Project </title>
 </head>
-<body>
-    <header>
-        <h2>Exchange Rates</h2>
-    </header>
-    <main>
-      <div class="dropdown" style="padding: 50px 0px 0px 0px;">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false"></button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a href="#" class="dropdawn-item usdEl">USD</a>
-            <a href="#" class="dropdawn-item uahEl">UAH</a>
-            <a href="#" class="dropdawn-item eurEl">EUR</a>
-            <a href="#" class="dropdawn-item cadEl">CAD</a>
-            <a href="#" class="dropdawn-item clpEl">CLP</a>
-            <a href="#" class="dropdawn-item copEl">COP</a>
-            <a href="#" class="dropdawn-item czkEl">CZK</a>
-            <a href="#" class="dropdawn-item dkkEl">DKK</a>
-            <a href="#" class="dropdawn-item dopEl">DOP</a>
-            <a href="#" class="dropdawn-item egpEl">EGP</a>
-        </div>
-      </div>
-        <table class="table table-dark">
-            <thead>
-              <tr>
-                <th scope="col" class="exchange">Exchange Rates</th>
-              </tr>
-            </thead>
-            <tbody class="tbody">
-              <!-- <tr>
-                <td class="usd">USD</td>
-                <td class="informationUsd"></td>
-              </tr>
-              <tr>
-                <td class="uah">UAH</td>
-                <td class="informationUah"></td>
-              </tr>
-              <tr>
-                <td class="eur">EUR</td>
-                <td class="informationEur"></td>
-              </tr>
-              <tr>
-                <td class="cad">CAD</td>
-                <td class="informationCad"></td>
-              </tr>
-              <tr>
-                <td class="clp">CLP</td>
-                <td class="informationClp"></td>
-              </tr>
-              <tr>
-                <td class="cop">COP</td>
-                <td class="informationCop"></td>
-              </tr>
-              <tr>
-                <td class="czk">CZK</td>
-                <td class="informationCzk"></td>
-              </tr>
-              <tr>
-                <td class="dkk">DKK</td>
-                <td class="informationDkk"></td>
-              </tr>
-              <tr>
-                <td class="dop">DOP</td>
-                <td class="informationDop"></td>
-              </tr>
-              <tr>
-                <td class="egp">EGP</td>
-                <td class="informationEgp"></td> -->
-              <!-- </tr> -->
-            </tbody>
-          </table>
-    </main>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+<header>
+  <h2>Exchange Rates</h2>
+</header>
+<body class="body">
+  <div class="dropdown m-5">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">USD</button>
+    <div class="dropdown-menu p-0">
+      <a class="USD item-1 dropdown-item" href="#">USD</a>
+      <a class="UAH item-2 dropdown-item" href="#">UAH</a>
+      <a class="EUR item-3 dropdown-item" href="#">EUR</a>
+      <a class="CAD item-4 dropdown-item" href="#">CAD</a>
+      <a class="CLP item-5 dropdown-item" href="#">CLP</a>
+      <a class="COP item-6 dropdown-item" href="#">COP</a>
+      <a class="CZK item-7 dropdown-item" href="#">CZK</a>
+      <a class="DKK item-8 dropdown-item" href="#">DKK</a>
+      <a class="DOP item-9 dropdown-item" href="#">DOP</a>
+      <a class="EGP item-10 dropdown-item" href="#">EGP</a>
+    </div>
+  </div>
+  <div class="spinner-border text-danger mx-auto" role="status" ></div>
+  <table class="table w-75 mx-auto">
+      <thead class="thead-dark w-50">
+        <tr>
+          <th class="col w-100" scope="col"> 
+            USD Exchange rate
+          </th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody class="table-body w-75"></tbody>
+  </table>
+    
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
 </body>
 </html>
